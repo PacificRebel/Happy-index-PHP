@@ -4,6 +4,7 @@ echo "On a scale of 0 to 10, how happy are you? ";
 
 $handle = fopen ("php://stdin","r");
 $line = fgets($handle);
+
 if (trim($line) == '0'){
     echo "...That's so sad!! Talk to me.\n";
 } elseif (('1' <= trim($line)) && (trim($line) <= '3')){
